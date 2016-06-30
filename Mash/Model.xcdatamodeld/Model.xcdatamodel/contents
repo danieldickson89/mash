@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="Mash" representedClassName=".Mash" syncable="YES">
+        <attribute name="career1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="career2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="career3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="career4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="home1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="home2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="home3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="home4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numOfKids1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numOfKids2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numOfKids3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numOfKids4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="person1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="person2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="person3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="person4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pet1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pet2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pet3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pet4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="place1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="place2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="place3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="place4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="theNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="vehicle1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicle2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicle3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicle4" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Mash" positionX="-54" positionY="-9" width="128" height="480"/>
+    </elements>
+</model>
