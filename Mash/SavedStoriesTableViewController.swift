@@ -12,11 +12,14 @@ class SavedStoriesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //tableView.backgroundColor = UIColor.myGreenColor()
     }
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBar.hidden = false
+        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
+        //self.navigationController?.navigationBar.barTintColor = UIColor.myGrayColor()
+        //UIApplication.sharedApplication().statusBarStyle = .LightContent
     }
     
     // MARK: - Table view data source
@@ -30,8 +33,17 @@ class SavedStoriesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("mashStory", forIndexPath: indexPath)
         
         let mash = MashController.sharedController.allMash[indexPath.row]
-        if let p1 = mash.person1, p2 = mash.person2, p3 = mash.person3, p4 = mash.person4 {
-            cell.textLabel?.text = "\(p1), \(p2), \(p3), \(p4)"
+        if let randomNum = mash.theNumber {
+            let results = StoryController.sharedController.getStory(Int(randomNum)).results
+            let story = StoryController.sharedController.storyResults(mash, storyResults: results)
+            cell.textLabel?.text = "\(story[1])  |  \(story[2])  |  \(story[4])"
+            cell.detailTextLabel?.text = "\(story[3])  |  \(story[5]) kid(s)  |  Pet \(story[6])"
+            cell.imageView?.image = UIImage(named: "\(story[0])")
+            cell.imageView?.contentMode = .ScaleAspectFit
+            //cell.textLabel?.textColor = UIColor.whiteColor()
+            //cell.detailTextLabel?.textColor = UIColor.whiteColor()
+            //cell.backgroundColor = UIColor.myGreenColor()
+
         }
         
         return cell
@@ -47,14 +59,21 @@ class SavedStoriesTableViewController: UITableViewController {
         }
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toStoryDetail" {
+            if let cell = sender as? UITableViewCell, indexPath = tableView.indexPathForCell(cell) {
+                let savedStoryDetailController = segue.destinationViewController as! SavedStoryDetailViewController
+                let mash = MashController.sharedController.allMash[indexPath.row]
+                savedStoryDetailController.mash = mash
+            }
+        }
      }
-     */
 
 }

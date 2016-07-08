@@ -8,32 +8,85 @@
 
 import UIKit
 
+// A delay function
+func delay(seconds seconds: Double, completion:()->()) {
+    let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * seconds ))
+    
+    dispatch_after(popTime, dispatch_get_main_queue()) {
+        completion()
+    }
+}
+
 class MenuViewController: UIViewController {
     
-    @IBOutlet weak var mashLabel: UILabel!
+    @IBOutlet weak var mImageView: UIImageView!
+    @IBOutlet weak var aImageView: UIImageView!
+    @IBOutlet weak var sImageView: UIImageView!
+    @IBOutlet weak var hImageView: UIImageView!
+    @IBOutlet weak var mashImageView: UIImageView!
+    @IBOutlet weak var mashGroundImageView: UIImageView!
+    @IBOutlet weak var sunImageView: UIImageView!
+    @IBOutlet weak var cloudImageView: UIImageView!
+    
     @IBOutlet weak var newGameButton: UIButton!
     @IBOutlet weak var savedStoriesButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        newGameButton.layer.borderWidth = 4.0
         newGameButton.layer.cornerRadius = 6.0
-        newGameButton.layer.borderColor = UIColor.myBlueColor().CGColor
-        newGameButton.tintColor = UIColor.myBlueColor()
-        savedStoriesButton.layer.borderWidth = 4.0
+        newGameButton.tintColor = UIColor.whiteColor()
         savedStoriesButton.layer.cornerRadius = 6.0
-        savedStoriesButton.layer.borderColor = UIColor.myBlueColor().CGColor
-        savedStoriesButton.tintColor = UIColor.myBlueColor()
-        mashLabel.textColor = UIColor.whiteColor()
-        view.backgroundColor = UIColor.myGrayColor()
+        savedStoriesButton.tintColor = UIColor.whiteColor()
+        view.backgroundColor = UIColor.whiteColor()
         
     }
     
-    override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBar.hidden = true
+    func drawRect(rect: CGRect) {
+        let path: UIBezierPath = UIBezierPath()
+        path.moveToPoint(CGPointMake(10.0, 10.0))
+        path.addLineToPoint(CGPointMake(100.0, 100.0))
+        path.lineWidth = 3
+        UIColor.blueColor().setStroke()
+        path.stroke()
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.hidden = true
+        UIApplication.sharedApplication().statusBarStyle = .Default
+        
+        mashImageView.animationImages = [UIImage(named: "Mansion")!, UIImage(named: "Apartment")!, UIImage(named: "Shack")!, UIImage(named: "House")!]
+        mashImageView.animationDuration = 8
+        mashImageView.animationRepeatCount = Int.max
+        mashImageView.startAnimating()
+        mashGroundImageView.animationImages = [UIImage(named: "MansionGround")!, UIImage(named: "ApartmentGround")!, UIImage(named: "ShackGround")!, UIImage(named: "HouseGround")!]
+        mashGroundImageView.animationDuration = 8
+        mashGroundImageView.animationRepeatCount = Int.max
+        mashGroundImageView.startAnimating()
+        
+        
+        
+        let shakeAnimation = CAKeyframeAnimation()
+        shakeAnimation.keyPath = "position.x"
+        shakeAnimation.values = [0, 40, -120, 40, 0]
+        shakeAnimation.keyTimes = [0, 1/6.0, 3/6.0, 5/6.0, 1.0]
+        shakeAnimation.duration = 10.0
+        shakeAnimation.additive = true
+        shakeAnimation.repeatCount = Float.infinity
+        cloudImageView.layer.addAnimation(shakeAnimation, forKey: "shake")
+        
+        let boundRect = CGRectMake(-20, -20, 20, 20)
+        let orbitAnimation = CAKeyframeAnimation()
+        orbitAnimation.keyPath = "position"
+        orbitAnimation.path = CGPathCreateWithEllipseInRect(boundRect, nil)
+        orbitAnimation.duration = 10.0
+        orbitAnimation.additive = true
+        orbitAnimation.repeatCount = Float.infinity
+        orbitAnimation.calculationMode = kCAAnimationPaced
+        orbitAnimation.rotationMode = kCAAnimationRotateAuto
+        sunImageView.layer.addAnimation(orbitAnimation, forKey: "orbit")
+    }
     
     // MARK: - Navigation
 

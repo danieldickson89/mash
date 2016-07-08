@@ -21,6 +21,18 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var mashStackView: UIStackView!
     @IBOutlet weak var animatedUIView: UIView!
+    @IBOutlet var bothArrowsUIView: UIView!
+    @IBOutlet var leftArrowUIView: UIView!
+    @IBOutlet var rightArrowUIView: UIView!
+    @IBOutlet var thirdTextBothArrowsUIView: UIView!
+    @IBOutlet weak var fourthLeftAnimatedUIView: UIView!
+    @IBOutlet weak var fourthRightAnimatedUIView: UIView!
+    @IBOutlet weak var firstRightAnimatedUIView: UIView!
+    @IBOutlet weak var firstLeftAnimatedUIView: UIView!
+    @IBOutlet weak var secondLeftAnimatedUIView: UIView!
+    @IBOutlet weak var secondRightAnimatedUIView: UIView!
+    @IBOutlet weak var thirdLeftAnimatedUIView: UIView!
+    @IBOutlet weak var thirdRightAnimatedUIView: UIView!
     
     @IBOutlet weak var cancelButtonTopConstraint: NSLayoutConstraint!
     
@@ -30,16 +42,40 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(QuestionsViewController.keyboardDidHide(_:)), name: UIKeyboardDidHideNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(QuestionsViewController.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(QuestionsViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
+        
+        firstAnswerTextField.addTarget(self, action: #selector(QuestionsViewController.textFieldDidChange), forControlEvents: UIControlEvents.EditingChanged)
+        secondAnswerTextField.addTarget(self, action: #selector(QuestionsViewController.textFieldDidChange), forControlEvents: UIControlEvents.EditingChanged)
+        thirdAnswerTextField.addTarget(self, action: #selector(QuestionsViewController.textFieldDidChange), forControlEvents: UIControlEvents.EditingChanged)
+        fourthAnswerTextField.addTarget(self, action: #selector(QuestionsViewController.textFieldDidChange), forControlEvents: UIControlEvents.EditingChanged)
         
         firstAnswerTextField.delegate = self
         secondAnswerTextField.delegate = self
         thirdAnswerTextField.delegate = self
         fourthAnswerTextField.delegate = self
         
-        view.backgroundColor = UIColor.whiteColor()
+        firstAnswerTextField.inputAccessoryView = rightArrowUIView
+        secondAnswerTextField.inputAccessoryView = bothArrowsUIView
+        thirdAnswerTextField.inputAccessoryView = thirdTextBothArrowsUIView
+        fourthAnswerTextField.inputAccessoryView = leftArrowUIView
+        
+        leftArrowUIView.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
+        rightArrowUIView.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
+        bothArrowsUIView.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
+        thirdTextBothArrowsUIView.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
+        firstLeftAnimatedUIView.layer.cornerRadius = 8
+        firstRightAnimatedUIView.layer.cornerRadius = 8
+        secondLeftAnimatedUIView.layer.cornerRadius = 8
+        secondRightAnimatedUIView.layer.cornerRadius = 8
+        thirdLeftAnimatedUIView.layer.cornerRadius = 8
+        thirdRightAnimatedUIView.layer.cornerRadius = 8
+        fourthLeftAnimatedUIView.layer.cornerRadius = 8
+        fourthRightAnimatedUIView.layer.cornerRadius = 8
+        
+        cancelButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        previousButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        nextButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
         titleLabel.textColor = UIColor.blackColor()
         setupTextField(firstAnswerTextField)
         setupTextField(secondAnswerTextField)
@@ -64,7 +100,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
         
         switch(questionNumber) {
         case 0:
-            titleLabel.text = "People:"
+            titleLabel.text = "Crushes:"
             previousButton.hidden = true
             previousButton.enabled = false
             break
@@ -83,7 +119,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
             setupWithEmptyTextFields()
             break
         case 4:
-            titleLabel.text = "Number of Kids:"
+            titleLabel.text = "# of Kids:"
             setupWithEmptyTextFields()
             break
         case 5:
@@ -92,8 +128,10 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
         default:
             titleLabel.text = "Oops"
         }
+        
+        setTextFieldKeyboards()
+        setupInputAccessoryViews()
         updateWithMash()
-        //firstAnswerTextField.becomeFirstResponder()
     }
     
     func updateMash() {
@@ -190,8 +228,44 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
     func setupTextField(textField: UITextField) {
         textField.layer.borderWidth = 2
         textField.layer.cornerRadius = 6
-        textField.layer.borderColor = UIColor.blueColor().CGColor
+        textField.layer.borderColor = UIColor.blackColor().CGColor
         textField.backgroundColor = UIColor.whiteColor()
+        textField.textColor = UIColor.blackColor()
+    }
+    
+    func setupInputAccessoryViews() {
+        firstLeftAnimatedUIView.backgroundColor = UIColor.blackColor()
+        firstRightAnimatedUIView.backgroundColor = UIColor.blackColor()
+        secondLeftAnimatedUIView.backgroundColor = UIColor.blackColor()
+        secondRightAnimatedUIView.backgroundColor = UIColor.blackColor()
+        thirdLeftAnimatedUIView.backgroundColor = UIColor.blackColor()
+        thirdRightAnimatedUIView.backgroundColor = UIColor.blackColor()
+        fourthLeftAnimatedUIView.backgroundColor = UIColor.blackColor()
+        fourthRightAnimatedUIView.backgroundColor = UIColor.blackColor()
+        firstLeftAnimatedUIView.alpha = 0
+        firstRightAnimatedUIView.alpha = 0
+        secondLeftAnimatedUIView.alpha = 0
+        secondRightAnimatedUIView.alpha = 0
+        thirdLeftAnimatedUIView.alpha = 0
+        thirdRightAnimatedUIView.alpha = 0
+        fourthLeftAnimatedUIView.alpha = 0
+        fourthRightAnimatedUIView.alpha = 0
+    }
+    
+    func setTextFieldKeyboards() {
+        switch questionNumber {
+        case 4:
+            firstAnswerTextField.keyboardType = .NumberPad
+            secondAnswerTextField.keyboardType = .NumberPad
+            thirdAnswerTextField.keyboardType = .NumberPad
+            fourthAnswerTextField.keyboardType = .NumberPad
+            break
+        default:
+            firstAnswerTextField.keyboardType = .Default
+            secondAnswerTextField.keyboardType = .Default
+            thirdAnswerTextField.keyboardType = .Default
+            fourthAnswerTextField.keyboardType = .Default
+        }
     }
     
     func setupWithEmptyTextFields() {
@@ -206,12 +280,12 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    func keyboardDidHide(notification: NSNotification) {
+    func textFieldDidChange() {
         updateNextButton()
     }
-    
+        
     func keyboardWillShow(notification: NSNotification) {
-        if self.cancelButtonTopConstraint.constant == 0{
+        if self.cancelButtonTopConstraint.constant == 8{
             let basicAnimation = CABasicAnimation()
             basicAnimation.keyPath = "position.y"
             basicAnimation.fromValue = self.view.center.y
@@ -220,9 +294,8 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
             
             self.view.layer.addAnimation(basicAnimation, forKey: "launch")
             self.view.center.y -= 20
-            self.cancelButtonTopConstraint.constant = -80
+            self.cancelButtonTopConstraint.constant = -90
         }
-        
     }
     
     func keyboardWillHide(notification: NSNotification) {
@@ -235,7 +308,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
             
             self.view.layer.addAnimation(basicAnimation, forKey: "launch")
             self.view.center.y += 20
-            self.cancelButtonTopConstraint.constant = 0
+            self.cancelButtonTopConstraint.constant = 8
         }
     }
     
@@ -253,6 +326,10 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
         updateMash()
         questionNumber -= 1
         updateWithView()
+        firstAnswerTextField.resignFirstResponder()
+        secondAnswerTextField.resignFirstResponder()
+        thirdAnswerTextField.resignFirstResponder()
+        fourthAnswerTextField.resignFirstResponder()
     }
     
     @IBAction func nextButtonTapped(sender: AnyObject) {
@@ -264,6 +341,10 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
             questionNumber += 1
             updateWithView()
         }
+        firstAnswerTextField.resignFirstResponder()
+        secondAnswerTextField.resignFirstResponder()
+        thirdAnswerTextField.resignFirstResponder()
+        fourthAnswerTextField.resignFirstResponder()
     }
 
     @IBAction func cancelButtonTapped(sender: AnyObject) {
@@ -281,10 +362,69 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - Navigation
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "toResults" {
-//            let resultsViewController = segue.destinationViewController as! ResultsViewController
-//            resultsViewController.mash = self.mash
-//        }
-//    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toResults" {
+            let resultsViewController = segue.destinationViewController as! ResultsViewController
+            resultsViewController.mash = self.mash
+        }
+    }
+}
+
+extension QuestionsViewController {
+    
+    // Take care of all the inputAccessoryView arrow actions
+    
+    @IBAction func fourthTextLeftArrowTapped(sender: AnyObject) {
+        setupInputAccessoryViews()
+        thirdLeftAnimatedUIView.alpha = 1
+        UIView.animateWithDuration(1) { () -> Void in
+            self.thirdLeftAnimatedUIView.alpha = 0
+        }
+        thirdAnswerTextField.becomeFirstResponder()
+    }
+    
+    @IBAction func firstTextRightArrowTapped(sender: AnyObject) {
+        setupInputAccessoryViews()
+        secondRightAnimatedUIView.alpha = 1
+        UIView.animateWithDuration(1) { () -> Void in
+            self.secondRightAnimatedUIView.alpha = 0
+        }
+        secondAnswerTextField.becomeFirstResponder()
+    }
+    
+    @IBAction func secondTextLeftArrowTapped(sender: AnyObject) {
+        setupInputAccessoryViews()
+        firstLeftAnimatedUIView.alpha = 1
+        UIView.animateWithDuration(1) { () -> Void in
+            self.firstLeftAnimatedUIView.alpha = 0
+        }
+        firstAnswerTextField.becomeFirstResponder()
+    }
+    
+    @IBAction func secondTextRightArrowTapped(sender: AnyObject) {
+        setupInputAccessoryViews()
+        thirdRightAnimatedUIView.alpha = 1
+        UIView.animateWithDuration(1) { () -> Void in
+            self.thirdRightAnimatedUIView.alpha = 0
+        }
+        thirdAnswerTextField.becomeFirstResponder()
+    }
+    
+    @IBAction func thirdTextLeftArrowTapped(sender: AnyObject) {
+        setupInputAccessoryViews()
+        secondLeftAnimatedUIView.alpha = 1
+        UIView.animateWithDuration(1) { () -> Void in
+            self.secondLeftAnimatedUIView.alpha = 0
+        }
+        secondAnswerTextField.becomeFirstResponder()
+    }
+    
+    @IBAction func thirdTextRightArrowTapped(sender: AnyObject) {
+        setupInputAccessoryViews()
+        fourthRightAnimatedUIView.alpha = 1
+        UIView.animateWithDuration(1) { () -> Void in
+            self.fourthRightAnimatedUIView.alpha = 0
+        }
+        fourthAnswerTextField.becomeFirstResponder()
+    }
 }

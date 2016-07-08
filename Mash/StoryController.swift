@@ -207,5 +207,16 @@ class StoryController {
         }
         return (everyIndexInOrder, theResults)
     }
-
+    
+    func storyResults(mash: Mash, storyResults: [Int]) -> [String] {
+        let homes = [mash.home1, mash.home2, mash.home3, mash.home4]
+        let people = [mash.person1, mash.person2, mash.person3, mash.person4]
+        let places = [mash.place1, mash.place2, mash.place3]
+        let vehicles = [mash.vehicle1, mash.vehicle2, mash.vehicle3, mash.vehicle4]
+        let careers = [mash.career1, mash.career2, mash.career3, mash.career4]
+        let numbersForKids = [mash.numOfKids1, mash.numOfKids2, mash.numOfKids3, mash.numOfKids4]
+        let pets = [mash.pet1, mash.pet2, mash.pet3, mash.pet4]
+        let results = [homes[storyResults[0]]!, people[storyResults[1]]!, places[storyResults[2]]!, vehicles[storyResults[3]]!, careers[storyResults[4]]!, numbersForKids[storyResults[5]]!, pets[storyResults[6]]!]
+        return results
+    }
 }
