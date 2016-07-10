@@ -17,10 +17,9 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var thirdAnswerTextField: UITextField!
     @IBOutlet weak var fourthAnswerTextField: UITextField!
     @IBOutlet weak var previousButton: UIButton!
+    @IBOutlet weak var spacingUIView: UIView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
-    @IBOutlet weak var mashStackView: UIStackView!
-    @IBOutlet weak var animatedUIView: UIView!
     @IBOutlet var bothArrowsUIView: UIView!
     @IBOutlet var leftArrowUIView: UIView!
     @IBOutlet var rightArrowUIView: UIView!
@@ -33,8 +32,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var secondRightAnimatedUIView: UIView!
     @IBOutlet weak var thirdLeftAnimatedUIView: UIView!
     @IBOutlet weak var thirdRightAnimatedUIView: UIView!
-    
-    @IBOutlet weak var cancelButtonTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var stackBottomConstraint: NSLayoutConstraint!
     
     var questionNumber = 0
     var mash: Mash?
@@ -73,6 +71,13 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
         fourthLeftAnimatedUIView.layer.cornerRadius = 8
         fourthRightAnimatedUIView.layer.cornerRadius = 8
         
+        previousButton.titleLabel?.numberOfLines = 1
+        previousButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        previousButton.titleLabel?.lineBreakMode = NSLineBreakMode.ByClipping
+        nextButton.titleLabel?.numberOfLines = 1
+        nextButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        nextButton.titleLabel?.lineBreakMode = NSLineBreakMode.ByClipping
+        
         cancelButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
         previousButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
         nextButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
@@ -86,10 +91,9 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
     
     func updateWithView() {
         
-        animatedUIView.backgroundColor = UIColor.whiteColor()
-        animatedUIView.alpha = 1.0
+        self.view.alpha = 0.5
         UIView.animateWithDuration(1.0) { () -> Void in
-            self.animatedUIView.alpha = 0
+            self.view.alpha = 1
         }
         
         if questionNumber == 5 {
@@ -102,11 +106,13 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
         case 0:
             titleLabel.text = "Crushes:"
             previousButton.hidden = true
+            spacingUIView.hidden = false
             previousButton.enabled = false
             break
         case 1:
             titleLabel.text = "Places:"
             previousButton.hidden = false
+            spacingUIView.hidden = true
             previousButton.enabled = true
             setupWithEmptyTextFields()
             break
@@ -285,7 +291,12 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
     }
         
     func keyboardWillShow(notification: NSNotification) {
-        if self.cancelButtonTopConstraint.constant == 8{
+        let info  = notification.userInfo!
+        let value: AnyObject = info[UIKeyboardFrameEndUserInfoKey]!
+        let rawFrame = value.CGRectValue
+        let keyboardFrame = view.convertRect(rawFrame, fromView: nil)
+        
+        if self.stackBottomConstraint.constant == 0{
             let basicAnimation = CABasicAnimation()
             basicAnimation.keyPath = "position.y"
             basicAnimation.fromValue = self.view.center.y
@@ -294,12 +305,12 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
             
             self.view.layer.addAnimation(basicAnimation, forKey: "launch")
             self.view.center.y -= 20
-            self.cancelButtonTopConstraint.constant = -90
+            self.stackBottomConstraint.constant = keyboardFrame.height
         }
     }
     
     func keyboardWillHide(notification: NSNotification) {
-        if self.cancelButtonTopConstraint.constant != 0{
+        if self.stackBottomConstraint.constant != 0{
             let basicAnimation = CABasicAnimation()
             basicAnimation.keyPath = "position.y"
             basicAnimation.fromValue = self.view.center.y
@@ -308,7 +319,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
             
             self.view.layer.addAnimation(basicAnimation, forKey: "launch")
             self.view.center.y += 20
-            self.cancelButtonTopConstraint.constant = 8
+            self.stackBottomConstraint.constant = 0
         }
     }
     
