@@ -58,10 +58,10 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
         thirdAnswerTextField.inputAccessoryView = thirdTextBothArrowsUIView
         fourthAnswerTextField.inputAccessoryView = leftArrowUIView
         
-        leftArrowUIView.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
-        rightArrowUIView.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
-        bothArrowsUIView.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
-        thirdTextBothArrowsUIView.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
+        leftArrowUIView.backgroundColor = UIColor(white: 0.8, alpha: 0.25)
+        rightArrowUIView.backgroundColor = UIColor(white: 0.8, alpha: 0.25)
+        bothArrowsUIView.backgroundColor = UIColor(white: 0.8, alpha: 0.25)
+        thirdTextBothArrowsUIView.backgroundColor = UIColor(white: 0.8, alpha: 0.25)
         firstLeftAnimatedUIView.layer.cornerRadius = 8
         firstRightAnimatedUIView.layer.cornerRadius = 8
         secondLeftAnimatedUIView.layer.cornerRadius = 8
