@@ -43,26 +43,32 @@ class SavedStoryDetailViewController: UIViewController {
     @IBOutlet weak var aLabel: UILabel!
     @IBOutlet weak var sLabel: UILabel!
     @IBOutlet weak var hLabel: UILabel!
+    @IBOutlet weak var peopleTitleLabel: UILabel!
     @IBOutlet weak var person1Label: UILabel!
     @IBOutlet weak var person2Label: UILabel!
     @IBOutlet weak var person3Label: UILabel!
     @IBOutlet weak var person4Label: UILabel!
+    @IBOutlet weak var placesTitleLabel: UILabel!
     @IBOutlet weak var place1Label: UILabel!
     @IBOutlet weak var place2Label: UILabel!
     @IBOutlet weak var place3Label: UILabel!
     @IBOutlet weak var place4Label: UILabel!
+    @IBOutlet weak var vehiclesTitleLabel: UILabel!
     @IBOutlet weak var vehicle1Label: UILabel!
     @IBOutlet weak var vehicle2Label: UILabel!
     @IBOutlet weak var vehicle3Label: UILabel!
     @IBOutlet weak var vehicle4Label: UILabel!
+    @IBOutlet weak var careersTitleLabel: UILabel!
     @IBOutlet weak var career1Label: UILabel!
     @IBOutlet weak var career2Label: UILabel!
     @IBOutlet weak var career3Label: UILabel!
     @IBOutlet weak var career4Label: UILabel!
+    @IBOutlet weak var numOfKidsTitleLabel: UILabel!
     @IBOutlet weak var numOfKids1Label: UILabel!
     @IBOutlet weak var numOfKids2Label: UILabel!
     @IBOutlet weak var numOfKids3Label: UILabel!
     @IBOutlet weak var numOfKids4Label: UILabel!
+    @IBOutlet weak var petsTitleLabel: UILabel!
     @IBOutlet weak var pet1Label: UILabel!
     @IBOutlet weak var pet2Label: UILabel!
     @IBOutlet weak var pet3Label: UILabel!
@@ -80,6 +86,19 @@ class SavedStoryDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        peopleTitleLabel.adjustsFontSizeToFitWidth = true
+        peopleTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
+        placesTitleLabel.adjustsFontSizeToFitWidth = true
+        placesTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
+        vehiclesTitleLabel.adjustsFontSizeToFitWidth = true
+        vehiclesTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
+        careersTitleLabel.adjustsFontSizeToFitWidth = true
+        careersTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
+        numOfKidsTitleLabel.adjustsFontSizeToFitWidth = true
+        numOfKidsTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
+        petsTitleLabel.adjustsFontSizeToFitWidth = true
+        petsTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
         
         self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
         //self.navigationController?.navigationBar.barTintColor = UIColor.myGrayColor()
