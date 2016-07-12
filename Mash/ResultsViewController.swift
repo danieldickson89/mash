@@ -44,26 +44,38 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var aUIView: UIView!
     @IBOutlet weak var sUIView: UIView!
     @IBOutlet weak var hUIView: UIView!
+    @IBOutlet weak var peopleTitleLabel: UILabel!
+    @IBOutlet weak var peopleUnderlineLabel: UILabel!
     @IBOutlet weak var person1UIView: UIView!
     @IBOutlet weak var person2UIView: UIView!
     @IBOutlet weak var person3UIView: UIView!
     @IBOutlet weak var person4UIView: UIView!
+    @IBOutlet weak var placesTitleLabel: UILabel!
+    @IBOutlet weak var placesUnderlineLabel: UILabel!
     @IBOutlet weak var place1UIView: UIView!
     @IBOutlet weak var place2UIView: UIView!
     @IBOutlet weak var place3UIView: UIView!
     @IBOutlet weak var place4UIView: UIView!
+    @IBOutlet weak var vehicleTitleLabel: UILabel!
+    @IBOutlet weak var vehicleUnderlineLabel: UILabel!
     @IBOutlet weak var vehicle1UIView: UIView!
     @IBOutlet weak var vehicle2UIView: UIView!
     @IBOutlet weak var vehicle3UIView: UIView!
     @IBOutlet weak var vehicle4UIView: UIView!
+    @IBOutlet weak var careerTitleLabel: UILabel!
+    @IBOutlet weak var careerUnderlineLabel: UILabel!
     @IBOutlet weak var career1UIView: UIView!
     @IBOutlet weak var career2UIView: UIView!
     @IBOutlet weak var career3UIView: UIView!
     @IBOutlet weak var career4UIView: UIView!
+    @IBOutlet weak var numOfKidsTitleLabel: UILabel!
+    @IBOutlet weak var numOfKidsUnderlineLabel: UILabel!
     @IBOutlet weak var numOfKids1UIView: UIView!
     @IBOutlet weak var numOfKids2UIView: UIView!
     @IBOutlet weak var numOfKidsUIView: UIView!
     @IBOutlet weak var numOfKids4UIView: UIView!
+    @IBOutlet weak var petsUnderlineLabel: UILabel!
+    @IBOutlet weak var petsTitleLabel: UILabel!
     @IBOutlet weak var pet1UIView: UIView!
     @IBOutlet weak var pet2UIView: UIView!
     @IBOutlet weak var pet3UIView: UIView!
@@ -87,6 +99,19 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        peopleTitleLabel.adjustsFontSizeToFitWidth = true
+        peopleTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
+        placesTitleLabel.adjustsFontSizeToFitWidth = true
+        placesTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
+        vehicleTitleLabel.adjustsFontSizeToFitWidth = true
+        vehicleTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
+        careerTitleLabel.adjustsFontSizeToFitWidth = true
+        careerTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
+        numOfKidsTitleLabel.adjustsFontSizeToFitWidth = true
+        numOfKidsTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
+        petsTitleLabel.adjustsFontSizeToFitWidth = true
+        petsTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
         
         if let mash = self.mash {
             peopleArray = [mash.person1!, mash.person2!, mash.person3!, mash.person4!]
@@ -183,12 +208,13 @@ extension ResultsViewController {
         var secondPointMake = CGPointMake(100.0, 16.0)
         switch uiview {
         case self.mUIView, self.aUIView, self.sUIView, self.hUIView:
-            thePointMake = CGPointMake(10.0, 30.0)
-            secondPointMake = CGPointMake(50.0, 10.0)
+            thePointMake = CGPointMake(20.0, 30.0)
+            secondPointMake = CGPointMake(65.0, 0.0)
             break
         default:
-            thePointMake = CGPointMake(10.0, 16.0)
-            secondPointMake = CGPointMake(100.0, 16.0)
+            let y = (uiview.frame.height) / 2.0
+            thePointMake = CGPointMake(10.0, y)
+            secondPointMake = CGPointMake(100.0, y)
             break
         }
         path.moveToPoint(thePointMake)
