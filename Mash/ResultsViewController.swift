@@ -175,10 +175,6 @@ class ResultsViewController: UIViewController {
         spiralImageView.startAnimating()
     }
     
-    func replaceSpiralWithStory() {
-        
-    }
-    
     @IBAction func tapWhenReadyButtonTapped(sender: AnyObject) {
         let story = StoryController.sharedController.getStory(randomNum)
         let homeUIViews = [mUIView, aUIView, sUIView, hUIView]
