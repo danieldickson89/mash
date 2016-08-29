@@ -101,7 +101,6 @@ class SavedStoryDetailViewController: UIViewController {
         petsTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
         
         self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
-        //self.navigationController?.navigationBar.barTintColor = UIColor.myGrayColor()
         let story = StoryController.sharedController.getStory(Int((mash?.theNumber!)!))
         
         if let mash = self.mash {

@@ -85,6 +85,7 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var tapWhenReadyButton: UIButton!
     @IBOutlet weak var spiralImageView: UIImageView!
+    @IBOutlet weak var storyLabel: UILabel!
     
     var mash: Mash?
     var homesArray: [String] = ["Mansion", "Apartment", "Shack", "House"]
@@ -113,6 +114,8 @@ class ResultsViewController: UIViewController {
         petsTitleLabel.adjustsFontSizeToFitWidth = true
         petsTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
         
+        let story = StoryController.sharedController.getStory(randomNum)
+        
         if let mash = self.mash {
             peopleArray = [mash.person1!, mash.person2!, mash.person3!, mash.person4!]
             placesArray = [mash.place1!, mash.place2!, mash.place3!, mash.place4!]
@@ -120,6 +123,8 @@ class ResultsViewController: UIViewController {
             careersArray = [mash.career1!, mash.career2!, mash.career3!, mash.career4!]
             numOfKidsArray = [mash.numOfKids1!, mash.numOfKids2!, mash.numOfKids3!, mash.numOfKids4!]
             petsArray = [mash.pet1!, mash.pet2!, mash.pet3!, mash.pet4!]
+            
+            storyLabel.text = "You married \(peopleArray[story.results[1]]) and live happily in a \(homesArray[story.results[0]]) in \(placesArray[story.results[2]]). You drive a \(vehiclesArray[story.results[3]]) to work where you are a(n) \(careersArray[story.results[4]]), and come home each day to \(numOfKidsArray[story.results[5]]) kid(s) and a pet \(petsArray[story.results[6]])."
         }
         
         mash?.theNumber = randomNum
@@ -150,7 +155,7 @@ class ResultsViewController: UIViewController {
         pet3Label.text = mash?.pet3
         pet4Label.text = mash?.pet4
         
-        //spiralImageView.hidden = true
+        storyLabel.hidden = true
         doneButton.hidden = true
         doneButton.enabled = false
         tapWhenReadyButton.titleLabel?.textAlignment = NSTextAlignment.Center
@@ -291,6 +296,10 @@ extension ResultsViewController {
             drawAnotherLine(allUIViews[story.theProcess[38]][story.theProcess[39]], lineNum: 20)
         } else if anim.valueForKey("id")!.isEqual("anim20") {
             drawAnotherLine(allUIViews[story.theProcess[40]][story.theProcess[41]], lineNum: 21)
+        } else if anim.valueForKey("id")!.isEqual("anim21") {
+            spiralImageView.hidden = true
+            tapWhenReadyButton.hidden = true
+            storyLabel.hidden = false
         }
     }
 }
