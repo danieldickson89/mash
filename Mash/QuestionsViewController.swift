@@ -185,44 +185,33 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    func setTextFieldsToSavedAnswers(answer1: String?, answer2: String?, answer3: String?, answer4: String?) {
+        firstAnswerTextField.text = answer1
+        secondAnswerTextField.text = answer2
+        thirdAnswerTextField.text = answer3
+        fourthAnswerTextField.text = answer4
+    }
+    
     func updateWithMash() {
         if let mash = self.mash {
             switch(questionNumber) {
             case 0:
-                firstAnswerTextField.text = mash.person1
-                secondAnswerTextField.text = mash.person2
-                thirdAnswerTextField.text = mash.person3
-                fourthAnswerTextField.text = mash.person4
+                setTextFieldsToSavedAnswers(mash.person1, answer2: mash.person2, answer3: mash.person3, answer4: mash.person4)
                 break
             case 1:
-                firstAnswerTextField.text = mash.place1
-                secondAnswerTextField.text = mash.place2
-                thirdAnswerTextField.text = mash.place3
-                fourthAnswerTextField.text = mash.place4
+                setTextFieldsToSavedAnswers(mash.place1, answer2: mash.place2, answer3: mash.place3, answer4: mash.place4)
                 break
             case 2:
-                firstAnswerTextField.text = mash.vehicle1
-                secondAnswerTextField.text = mash.vehicle2
-                thirdAnswerTextField.text = mash.vehicle3
-                fourthAnswerTextField.text = mash.vehicle4
+                setTextFieldsToSavedAnswers(mash.vehicle1, answer2: mash.vehicle2, answer3: mash.vehicle3, answer4: mash.vehicle4)
                 break
             case 3:
-                firstAnswerTextField.text = mash.career1
-                secondAnswerTextField.text = mash.career2
-                thirdAnswerTextField.text = mash.career3
-                fourthAnswerTextField.text = mash.career4
+                setTextFieldsToSavedAnswers(mash.career1, answer2: mash.career2, answer3: mash.career3, answer4: mash.career4)
                 break
             case 4:
-                firstAnswerTextField.text = mash.numOfKids1
-                secondAnswerTextField.text = mash.numOfKids2
-                thirdAnswerTextField.text = mash.numOfKids3
-                fourthAnswerTextField.text = mash.numOfKids4
+                setTextFieldsToSavedAnswers(mash.numOfKids1, answer2: mash.numOfKids2, answer3: mash.numOfKids3, answer4: mash.numOfKids4)
                 break
             case 5:
-                firstAnswerTextField.text = mash.pet1
-                secondAnswerTextField.text = mash.pet2
-                thirdAnswerTextField.text = mash.pet3
-                fourthAnswerTextField.text = mash.pet4
+                setTextFieldsToSavedAnswers(mash.pet1, answer2: mash.pet2, answer3: mash.pet3, answer4: mash.pet4)
                 break
             default:
                 print("Uh oh....")
