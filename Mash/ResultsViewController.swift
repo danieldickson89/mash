@@ -39,7 +39,6 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var pet3Label: UILabel!
     @IBOutlet weak var pet4Label: UILabel!
     
-    
     @IBOutlet weak var mUIView: UIView!
     @IBOutlet weak var aUIView: UIView!
     @IBOutlet weak var sUIView: UIView!
@@ -80,7 +79,6 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var pet2UIView: UIView!
     @IBOutlet weak var pet3UIView: UIView!
     @IBOutlet weak var pet4UIView: UIView!
-    
     
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var tapWhenReadyButton: UIButton!
