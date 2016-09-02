@@ -785,7 +785,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iC1-FG-Cn6">
                                                         <rect key="frame" x="0.0" y="33" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bug-yE-Ijo">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="person1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bug-yE-Ijo">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="180" id="ZjY-bo-uUQ"/>
@@ -805,7 +805,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ar-rx-1P0">
                                                         <rect key="frame" x="0.0" y="66" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="3dC-ml-uNu">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="person2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="3dC-ml-uNu">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="180" id="1H9-Hi-s1c"/>
@@ -825,7 +825,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="320-Yo-90c">
                                                         <rect key="frame" x="0.0" y="99" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="HJc-2O-sI0">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="person3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="HJc-2O-sI0">
                                                                 <rect key="frame" x="-1" y="1" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="180" id="A2L-Wh-tJt"/>
@@ -845,7 +845,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2e-qd-5nX">
                                                         <rect key="frame" x="0.0" y="131" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="JLR-JQ-l7m">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="person4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="JLR-JQ-l7m">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="180" id="IBa-8e-4Jh"/>
@@ -902,7 +902,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVc-gd-beL">
                                                         <rect key="frame" x="0.0" y="33" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="aYg-Va-0Yx">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="place1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="aYg-Va-0Yx">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="3Uv-7l-C0k"/>
@@ -922,7 +922,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9t-sb-RgY">
                                                         <rect key="frame" x="0.0" y="66" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="4JJ-dp-sGB">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="place2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="4JJ-dp-sGB">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="Gg1-pZ-YXo"/>
@@ -942,7 +942,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUa-R4-nvt">
                                                         <rect key="frame" x="0.0" y="99" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="TNK-0N-avK">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="place3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="TNK-0N-avK">
                                                                 <rect key="frame" x="-1" y="1" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="180" id="UjF-df-BsN"/>
@@ -962,7 +962,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkj-Ku-V2w">
                                                         <rect key="frame" x="0.0" y="131" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="6VC-zr-fDI">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="place4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="6VC-zr-fDI">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="180" id="iOW-ee-1bU"/>
@@ -1019,7 +1019,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Nw-Tt-KlE">
                                                         <rect key="frame" x="0.0" y="33" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="zBE-bN-c96">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vehicle1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="zBE-bN-c96">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="IDh-aE-3pG"/>
@@ -1039,7 +1039,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9o-xZ-kVf">
                                                         <rect key="frame" x="0.0" y="66" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="AfU-FK-Zdk">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vehicle2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="AfU-FK-Zdk">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="180" id="BZO-DQ-yp4"/>
@@ -1059,7 +1059,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEM-xf-MT7">
                                                         <rect key="frame" x="0.0" y="99" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="exP-ki-qbd">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vehicle3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="exP-ki-qbd">
                                                                 <rect key="frame" x="-1" y="1" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="180" id="Zfc-J4-Her"/>
@@ -1079,7 +1079,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZv-GU-vGf">
                                                         <rect key="frame" x="0.0" y="131" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="1sq-uU-bdw">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vehicle4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="1sq-uU-bdw">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="KWu-pk-9GB"/>
@@ -1141,7 +1141,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqk-jQ-P5b">
                                                         <rect key="frame" x="0.0" y="33" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="6kP-BD-Ef0">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="career1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="6kP-BD-Ef0">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="VcP-C1-DKF"/>
@@ -1161,7 +1161,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vD5-rd-5Kf">
                                                         <rect key="frame" x="0.0" y="66" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="eSw-iK-fRx">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="career2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="eSw-iK-fRx">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="rLg-5Q-YM8"/>
@@ -1181,7 +1181,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iib-yu-XgQ">
                                                         <rect key="frame" x="0.0" y="99" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ee4-Fc-Dj7">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="career3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ee4-Fc-Dj7">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="180" id="ZpJ-Y2-lpA"/>
@@ -1201,7 +1201,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDh-Tk-lTN">
                                                         <rect key="frame" x="0.0" y="131" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="VVv-kk-JaB">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="career4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="VVv-kk-JaB">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="180" id="9Ak-uF-BR3"/>
@@ -1258,7 +1258,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7aR-xB-IEG">
                                                         <rect key="frame" x="0.0" y="33" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="WGd-Ls-aIM">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="numOfKids1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="WGd-Ls-aIM">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="180" id="Y6y-Ye-sfd"/>
@@ -1278,7 +1278,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tc3-nx-Smm">
                                                         <rect key="frame" x="0.0" y="66" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="9TF-HD-K9e">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="numOfKids2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="9TF-HD-K9e">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="180" id="6y5-bn-pLW"/>
@@ -1298,7 +1298,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eS0-Cz-hdF">
                                                         <rect key="frame" x="0.0" y="99" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="vea-HR-YCD">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="numOfKids3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="vea-HR-YCD">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="CBM-Kk-VQx"/>
@@ -1318,7 +1318,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPL-0b-0tn">
                                                         <rect key="frame" x="0.0" y="131" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="l8h-WX-z7b">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="numOfKids4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="l8h-WX-z7b">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="180" id="I08-7J-iBk"/>
@@ -1375,7 +1375,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQu-pM-HWm">
                                                         <rect key="frame" x="0.0" y="33" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="9qb-LG-UGv">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pet1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="9qb-LG-UGv">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="AQf-qJ-BHd"/>
@@ -1395,7 +1395,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDa-W1-m90">
                                                         <rect key="frame" x="0.0" y="66" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ytj-ou-3wE">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pet2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ytj-ou-3wE">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="E6M-Wk-XJ4"/>
@@ -1415,7 +1415,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcX-yr-R9V">
                                                         <rect key="frame" x="0.0" y="99" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="oge-9g-4hU">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pet3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="oge-9g-4hU">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="6Hp-vr-QAf"/>
@@ -1435,7 +1435,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aO-UQ-ngP">
                                                         <rect key="frame" x="0.0" y="131" width="178" height="33"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="ipC-NC-nZ2">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pet4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="ipC-NC-nZ2">
                                                                 <rect key="frame" x="-1" y="2" width="180" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="Qyn-4d-2NI"/>
@@ -1516,78 +1516,78 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="aLabel" destination="R4S-Xr-zTx" id="k3T-qJ-hP0"/>
-                        <outlet property="aUIView" destination="tEr-Xr-LRB" id="yDw-zW-9nD"/>
-                        <outlet property="career1Label" destination="6kP-BD-Ef0" id="ycD-Vn-BM6"/>
-                        <outlet property="career1UIView" destination="lqk-jQ-P5b" id="EnI-yA-mdg"/>
-                        <outlet property="career2Label" destination="eSw-iK-fRx" id="cEF-fz-XJx"/>
-                        <outlet property="career2UIView" destination="vD5-rd-5Kf" id="1HR-DZ-h3l"/>
-                        <outlet property="career3Label" destination="Ee4-Fc-Dj7" id="YD0-hy-lhy"/>
-                        <outlet property="career3UIView" destination="iib-yu-XgQ" id="FZL-JY-Xuj"/>
-                        <outlet property="career4Label" destination="VVv-kk-JaB" id="eA8-6I-2eY"/>
-                        <outlet property="career4UIView" destination="jDh-Tk-lTN" id="20y-zm-tED"/>
-                        <outlet property="careerTitleLabel" destination="wdX-Om-Vo2" id="eR9-Et-WyG"/>
-                        <outlet property="careerUnderlineLabel" destination="ufA-bm-4Id" id="GIg-fq-DE8"/>
                         <outlet property="doneButton" destination="Dk3-0d-SSv" id="EhO-2J-uGs"/>
-                        <outlet property="hLabel" destination="j74-1Y-pNQ" id="2Mt-7X-lHG"/>
-                        <outlet property="hUIView" destination="B2P-XY-jAD" id="IXl-02-QY1"/>
-                        <outlet property="mLabel" destination="dUc-ei-FGn" id="P3C-Vs-K4d"/>
-                        <outlet property="mUIView" destination="r8L-9o-QAg" id="mmX-Nh-05l"/>
-                        <outlet property="numOfKids1Label" destination="WGd-Ls-aIM" id="YZb-ih-KBm"/>
-                        <outlet property="numOfKids1UIView" destination="7aR-xB-IEG" id="ZuI-MK-Grj"/>
-                        <outlet property="numOfKids2Label" destination="9TF-HD-K9e" id="RgP-Tc-N5k"/>
-                        <outlet property="numOfKids2UIView" destination="Tc3-nx-Smm" id="wD8-Ok-Uyz"/>
-                        <outlet property="numOfKids3Label" destination="vea-HR-YCD" id="M8w-DC-v0G"/>
-                        <outlet property="numOfKids4Label" destination="l8h-WX-z7b" id="OFX-mg-Jqb"/>
-                        <outlet property="numOfKids4UIView" destination="ZPL-0b-0tn" id="v1u-0E-Ml0"/>
-                        <outlet property="numOfKidsTitleLabel" destination="O93-DW-M5h" id="mDl-P5-5r9"/>
-                        <outlet property="numOfKidsUIView" destination="eS0-Cz-hdF" id="BEM-wq-SUj"/>
-                        <outlet property="numOfKidsUnderlineLabel" destination="5u3-r6-GqW" id="GKc-CH-uj0"/>
-                        <outlet property="peopleTitleLabel" destination="L6e-jg-Uid" id="G8e-8c-hPF"/>
-                        <outlet property="peopleUnderlineLabel" destination="boH-N4-JVc" id="HAk-ak-Nn7"/>
-                        <outlet property="person1Label" destination="Bug-yE-Ijo" id="bGw-3i-ERi"/>
-                        <outlet property="person1UIView" destination="iC1-FG-Cn6" id="yXz-Ay-nPS"/>
-                        <outlet property="person2Label" destination="3dC-ml-uNu" id="VQy-hl-ybe"/>
-                        <outlet property="person2UIView" destination="3ar-rx-1P0" id="s8z-dX-nw5"/>
-                        <outlet property="person3Label" destination="HJc-2O-sI0" id="00N-k0-RrS"/>
-                        <outlet property="person3UIView" destination="320-Yo-90c" id="BDZ-Ui-81M"/>
-                        <outlet property="person4Label" destination="JLR-JQ-l7m" id="T8U-By-NKq"/>
-                        <outlet property="person4UIView" destination="j2e-qd-5nX" id="etc-em-vrp"/>
-                        <outlet property="pet1Label" destination="9qb-LG-UGv" id="kiw-Wo-PTu"/>
-                        <outlet property="pet1UIView" destination="cQu-pM-HWm" id="9Tv-Tp-TEV"/>
-                        <outlet property="pet2Label" destination="Ytj-ou-3wE" id="2sE-Py-kWc"/>
-                        <outlet property="pet2UIView" destination="zDa-W1-m90" id="sDz-qg-urm"/>
-                        <outlet property="pet3Label" destination="oge-9g-4hU" id="atx-lz-Pyn"/>
-                        <outlet property="pet3UIView" destination="dcX-yr-R9V" id="Wsv-KN-kjQ"/>
-                        <outlet property="pet4Label" destination="ipC-NC-nZ2" id="YiR-tM-VP0"/>
-                        <outlet property="pet4UIView" destination="5aO-UQ-ngP" id="IWt-2d-l1d"/>
-                        <outlet property="petsTitleLabel" destination="JhO-wA-RMW" id="dNt-mP-vCZ"/>
-                        <outlet property="petsUnderlineLabel" destination="6pz-Dr-NgS" id="bkz-zH-t6C"/>
-                        <outlet property="place1Label" destination="aYg-Va-0Yx" id="0g4-Ou-qCg"/>
-                        <outlet property="place1UIView" destination="aVc-gd-beL" id="vpf-rl-UFr"/>
-                        <outlet property="place2Label" destination="4JJ-dp-sGB" id="8o3-Jc-yQA"/>
-                        <outlet property="place2UIView" destination="F9t-sb-RgY" id="7F9-tZ-Ggr"/>
-                        <outlet property="place3Label" destination="TNK-0N-avK" id="1dJ-ru-dQm"/>
-                        <outlet property="place3UIView" destination="AUa-R4-nvt" id="O1d-7O-BkQ"/>
-                        <outlet property="place4Label" destination="6VC-zr-fDI" id="dkY-6x-YD9"/>
-                        <outlet property="place4UIView" destination="gkj-Ku-V2w" id="Go5-pO-65C"/>
-                        <outlet property="placesTitleLabel" destination="jqn-Nc-Suy" id="fWy-ur-M8t"/>
-                        <outlet property="placesUnderlineLabel" destination="c8X-7i-9EJ" id="d70-53-bh3"/>
-                        <outlet property="sLabel" destination="eVo-3r-8qD" id="jPw-7w-H7j"/>
-                        <outlet property="sUIView" destination="gLW-RH-xl3" id="TPV-wW-JWQ"/>
                         <outlet property="spiralImageView" destination="Qel-07-PNZ" id="RFB-Wp-ukD"/>
                         <outlet property="storyLabel" destination="Rcz-0e-pHe" id="cCA-LW-trq"/>
                         <outlet property="tapWhenReadyButton" destination="jOp-xM-bLT" id="zoC-YD-ezs"/>
-                        <outlet property="vehicle1Label" destination="zBE-bN-c96" id="cAp-sc-6la"/>
-                        <outlet property="vehicle1UIView" destination="6Nw-Tt-KlE" id="5q4-3U-VzE"/>
-                        <outlet property="vehicle2Label" destination="AfU-FK-Zdk" id="DUw-tc-goN"/>
-                        <outlet property="vehicle2UIView" destination="j9o-xZ-kVf" id="IbO-MX-jJW"/>
-                        <outlet property="vehicle3Label" destination="exP-ki-qbd" id="tuz-CW-qR9"/>
-                        <outlet property="vehicle3UIView" destination="UEM-xf-MT7" id="XhJ-dy-w1b"/>
-                        <outlet property="vehicle4Label" destination="1sq-uU-bdw" id="jDm-Gk-yPG"/>
-                        <outlet property="vehicle4UIView" destination="IZv-GU-vGf" id="htE-hn-qNj"/>
-                        <outlet property="vehicleTitleLabel" destination="oE5-rW-52n" id="7IN-Ho-JpA"/>
-                        <outlet property="vehicleUnderlineLabel" destination="pvb-cx-HC5" id="Bmk-A2-LQp"/>
+                        <outletCollection property="mashLabels" destination="dUc-ei-FGn" collectionClass="NSMutableArray" id="roF-tM-hsO"/>
+                        <outletCollection property="mashLabels" destination="R4S-Xr-zTx" collectionClass="NSMutableArray" id="Vga-hj-hRJ"/>
+                        <outletCollection property="mashLabels" destination="eVo-3r-8qD" collectionClass="NSMutableArray" id="svK-sS-nZl"/>
+                        <outletCollection property="mashLabels" destination="j74-1Y-pNQ" collectionClass="NSMutableArray" id="QHB-kn-dHR"/>
+                        <outletCollection property="mashLabels" destination="Bug-yE-Ijo" collectionClass="NSMutableArray" id="nLb-2t-U7G"/>
+                        <outletCollection property="mashLabels" destination="3dC-ml-uNu" collectionClass="NSMutableArray" id="P2h-fh-Ida"/>
+                        <outletCollection property="mashLabels" destination="HJc-2O-sI0" collectionClass="NSMutableArray" id="qig-Jm-qje"/>
+                        <outletCollection property="mashLabels" destination="JLR-JQ-l7m" collectionClass="NSMutableArray" id="3eq-sJ-imS"/>
+                        <outletCollection property="mashLabels" destination="aYg-Va-0Yx" collectionClass="NSMutableArray" id="wvt-j9-tgj"/>
+                        <outletCollection property="mashLabels" destination="4JJ-dp-sGB" collectionClass="NSMutableArray" id="K4H-YB-usk"/>
+                        <outletCollection property="mashLabels" destination="TNK-0N-avK" collectionClass="NSMutableArray" id="uhH-6q-RKM"/>
+                        <outletCollection property="mashLabels" destination="6VC-zr-fDI" collectionClass="NSMutableArray" id="yRA-vA-yGj"/>
+                        <outletCollection property="mashLabels" destination="zBE-bN-c96" collectionClass="NSMutableArray" id="dDQ-CO-Exg"/>
+                        <outletCollection property="mashLabels" destination="AfU-FK-Zdk" collectionClass="NSMutableArray" id="df0-pu-jU9"/>
+                        <outletCollection property="mashLabels" destination="exP-ki-qbd" collectionClass="NSMutableArray" id="qEf-9m-m1m"/>
+                        <outletCollection property="mashLabels" destination="1sq-uU-bdw" collectionClass="NSMutableArray" id="sJX-nZ-MVi"/>
+                        <outletCollection property="mashLabels" destination="6kP-BD-Ef0" collectionClass="NSMutableArray" id="gDw-3b-cZK"/>
+                        <outletCollection property="mashLabels" destination="eSw-iK-fRx" collectionClass="NSMutableArray" id="JHj-mx-5LI"/>
+                        <outletCollection property="mashLabels" destination="Ee4-Fc-Dj7" collectionClass="NSMutableArray" id="4oE-L3-zkg"/>
+                        <outletCollection property="mashLabels" destination="VVv-kk-JaB" collectionClass="NSMutableArray" id="gUB-cp-4I0"/>
+                        <outletCollection property="mashLabels" destination="WGd-Ls-aIM" collectionClass="NSMutableArray" id="EZM-ya-hZy"/>
+                        <outletCollection property="mashLabels" destination="9TF-HD-K9e" collectionClass="NSMutableArray" id="VOT-Qy-9AL"/>
+                        <outletCollection property="mashLabels" destination="vea-HR-YCD" collectionClass="NSMutableArray" id="eZL-I9-F7E"/>
+                        <outletCollection property="mashLabels" destination="l8h-WX-z7b" collectionClass="NSMutableArray" id="Wj0-Cb-aEL"/>
+                        <outletCollection property="mashLabels" destination="9qb-LG-UGv" collectionClass="NSMutableArray" id="qpi-Dm-j5o"/>
+                        <outletCollection property="mashLabels" destination="Ytj-ou-3wE" collectionClass="NSMutableArray" id="piY-Nc-UA9"/>
+                        <outletCollection property="mashLabels" destination="oge-9g-4hU" collectionClass="NSMutableArray" id="jPR-jT-6a6"/>
+                        <outletCollection property="mashLabels" destination="ipC-NC-nZ2" collectionClass="NSMutableArray" id="Q8H-v2-nCY"/>
+                        <outletCollection property="mashUIViews" destination="r8L-9o-QAg" collectionClass="NSMutableArray" id="Bex-WU-y6d"/>
+                        <outletCollection property="mashUIViews" destination="tEr-Xr-LRB" collectionClass="NSMutableArray" id="V1C-Fb-FSS"/>
+                        <outletCollection property="mashUIViews" destination="gLW-RH-xl3" collectionClass="NSMutableArray" id="mtL-aF-nvz"/>
+                        <outletCollection property="mashUIViews" destination="B2P-XY-jAD" collectionClass="NSMutableArray" id="xrn-SL-0Mp"/>
+                        <outletCollection property="mashUIViews" destination="iC1-FG-Cn6" collectionClass="NSMutableArray" id="WHK-4H-IEl"/>
+                        <outletCollection property="mashUIViews" destination="3ar-rx-1P0" collectionClass="NSMutableArray" id="Qzs-dR-zyZ"/>
+                        <outletCollection property="mashUIViews" destination="320-Yo-90c" collectionClass="NSMutableArray" id="mU2-9O-akc"/>
+                        <outletCollection property="mashUIViews" destination="j2e-qd-5nX" collectionClass="NSMutableArray" id="ymM-CI-M9e"/>
+                        <outletCollection property="mashUIViews" destination="aVc-gd-beL" collectionClass="NSMutableArray" id="G8V-Pa-SqS"/>
+                        <outletCollection property="mashUIViews" destination="F9t-sb-RgY" collectionClass="NSMutableArray" id="CGJ-ul-s7k"/>
+                        <outletCollection property="mashUIViews" destination="AUa-R4-nvt" collectionClass="NSMutableArray" id="M4m-8o-PQp"/>
+                        <outletCollection property="mashUIViews" destination="gkj-Ku-V2w" collectionClass="NSMutableArray" id="Tym-ig-uyJ"/>
+                        <outletCollection property="mashUIViews" destination="6Nw-Tt-KlE" collectionClass="NSMutableArray" id="pZM-JB-oex"/>
+                        <outletCollection property="mashUIViews" destination="UEM-xf-MT7" collectionClass="NSMutableArray" id="DG9-Eq-L6Z"/>
+                        <outletCollection property="mashUIViews" destination="UEM-xf-MT7" collectionClass="NSMutableArray" id="aWP-op-Rhb"/>
+                        <outletCollection property="mashUIViews" destination="IZv-GU-vGf" collectionClass="NSMutableArray" id="mNg-vO-eaL"/>
+                        <outletCollection property="mashUIViews" destination="lqk-jQ-P5b" collectionClass="NSMutableArray" id="uw6-i4-Wsz"/>
+                        <outletCollection property="mashUIViews" destination="vD5-rd-5Kf" collectionClass="NSMutableArray" id="pdn-Lb-GEh"/>
+                        <outletCollection property="mashUIViews" destination="iib-yu-XgQ" collectionClass="NSMutableArray" id="6Zf-ne-M6j"/>
+                        <outletCollection property="mashUIViews" destination="jDh-Tk-lTN" collectionClass="NSMutableArray" id="vqC-gX-mSJ"/>
+                        <outletCollection property="mashUIViews" destination="7aR-xB-IEG" collectionClass="NSMutableArray" id="pm4-eF-MUX"/>
+                        <outletCollection property="mashUIViews" destination="Tc3-nx-Smm" collectionClass="NSMutableArray" id="oqQ-Nd-bl5"/>
+                        <outletCollection property="mashUIViews" destination="eS0-Cz-hdF" collectionClass="NSMutableArray" id="Ura-3t-Fag"/>
+                        <outletCollection property="mashUIViews" destination="ZPL-0b-0tn" collectionClass="NSMutableArray" id="b3q-bz-J4q"/>
+                        <outletCollection property="mashUIViews" destination="cQu-pM-HWm" collectionClass="NSMutableArray" id="FvW-nr-Iwn"/>
+                        <outletCollection property="mashUIViews" destination="zDa-W1-m90" collectionClass="NSMutableArray" id="CeF-Nl-g4j"/>
+                        <outletCollection property="mashUIViews" destination="dcX-yr-R9V" collectionClass="NSMutableArray" id="qTJ-we-cyt"/>
+                        <outletCollection property="mashUIViews" destination="5aO-UQ-ngP" collectionClass="NSMutableArray" id="UfK-tO-zi7"/>
+                        <outletCollection property="titleAndUnderlineLabels" destination="L6e-jg-Uid" id="RnJ-Ki-sCY"/>
+                        <outletCollection property="titleAndUnderlineLabels" destination="boH-N4-JVc" id="lMT-Lz-xSu"/>
+                        <outletCollection property="titleAndUnderlineLabels" destination="jqn-Nc-Suy" id="2aj-fw-j4u"/>
+                        <outletCollection property="titleAndUnderlineLabels" destination="c8X-7i-9EJ" id="X3d-zB-WMG"/>
+                        <outletCollection property="titleAndUnderlineLabels" destination="oE5-rW-52n" id="qWI-Qi-IFA"/>
+                        <outletCollection property="titleAndUnderlineLabels" destination="pvb-cx-HC5" id="c1S-kb-FI0"/>
+                        <outletCollection property="titleAndUnderlineLabels" destination="wdX-Om-Vo2" id="Lvd-k7-itT"/>
+                        <outletCollection property="titleAndUnderlineLabels" destination="ufA-bm-4Id" id="MTx-7Q-T2I"/>
+                        <outletCollection property="titleAndUnderlineLabels" destination="O93-DW-M5h" id="8b5-pV-CSb"/>
+                        <outletCollection property="titleAndUnderlineLabels" destination="5u3-r6-GqW" id="fQK-ap-GWH"/>
+                        <outletCollection property="titleAndUnderlineLabels" destination="JhO-wA-RMW" id="YbY-4K-xce"/>
+                        <outletCollection property="titleAndUnderlineLabels" destination="6pz-Dr-NgS" id="LQC-9e-lq1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3r-JK-2KH" userLabel="First Responder" sceneMemberID="firstResponder"/>

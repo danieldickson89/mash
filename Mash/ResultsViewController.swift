@@ -10,76 +10,9 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
-    @IBOutlet weak var mLabel: UILabel!
-    @IBOutlet weak var aLabel: UILabel!
-    @IBOutlet weak var sLabel: UILabel!
-    @IBOutlet weak var hLabel: UILabel!
-    @IBOutlet weak var person1Label: UILabel!
-    @IBOutlet weak var person2Label: UILabel!
-    @IBOutlet weak var person3Label: UILabel!
-    @IBOutlet weak var person4Label: UILabel!
-    @IBOutlet weak var place1Label: UILabel!
-    @IBOutlet weak var place2Label: UILabel!
-    @IBOutlet weak var place3Label: UILabel!
-    @IBOutlet weak var place4Label: UILabel!
-    @IBOutlet weak var vehicle1Label: UILabel!
-    @IBOutlet weak var vehicle2Label: UILabel!
-    @IBOutlet weak var vehicle3Label: UILabel!
-    @IBOutlet weak var vehicle4Label: UILabel!
-    @IBOutlet weak var career1Label: UILabel!
-    @IBOutlet weak var career2Label: UILabel!
-    @IBOutlet weak var career3Label: UILabel!
-    @IBOutlet weak var career4Label: UILabel!
-    @IBOutlet weak var numOfKids1Label: UILabel!
-    @IBOutlet weak var numOfKids2Label: UILabel!
-    @IBOutlet weak var numOfKids3Label: UILabel!
-    @IBOutlet weak var numOfKids4Label: UILabel!
-    @IBOutlet weak var pet1Label: UILabel!
-    @IBOutlet weak var pet2Label: UILabel!
-    @IBOutlet weak var pet3Label: UILabel!
-    @IBOutlet weak var pet4Label: UILabel!
-    
-    @IBOutlet weak var mUIView: UIView!
-    @IBOutlet weak var aUIView: UIView!
-    @IBOutlet weak var sUIView: UIView!
-    @IBOutlet weak var hUIView: UIView!
-    @IBOutlet weak var peopleTitleLabel: UILabel!
-    @IBOutlet weak var peopleUnderlineLabel: UILabel!
-    @IBOutlet weak var person1UIView: UIView!
-    @IBOutlet weak var person2UIView: UIView!
-    @IBOutlet weak var person3UIView: UIView!
-    @IBOutlet weak var person4UIView: UIView!
-    @IBOutlet weak var placesTitleLabel: UILabel!
-    @IBOutlet weak var placesUnderlineLabel: UILabel!
-    @IBOutlet weak var place1UIView: UIView!
-    @IBOutlet weak var place2UIView: UIView!
-    @IBOutlet weak var place3UIView: UIView!
-    @IBOutlet weak var place4UIView: UIView!
-    @IBOutlet weak var vehicleTitleLabel: UILabel!
-    @IBOutlet weak var vehicleUnderlineLabel: UILabel!
-    @IBOutlet weak var vehicle1UIView: UIView!
-    @IBOutlet weak var vehicle2UIView: UIView!
-    @IBOutlet weak var vehicle3UIView: UIView!
-    @IBOutlet weak var vehicle4UIView: UIView!
-    @IBOutlet weak var careerTitleLabel: UILabel!
-    @IBOutlet weak var careerUnderlineLabel: UILabel!
-    @IBOutlet weak var career1UIView: UIView!
-    @IBOutlet weak var career2UIView: UIView!
-    @IBOutlet weak var career3UIView: UIView!
-    @IBOutlet weak var career4UIView: UIView!
-    @IBOutlet weak var numOfKidsTitleLabel: UILabel!
-    @IBOutlet weak var numOfKidsUnderlineLabel: UILabel!
-    @IBOutlet weak var numOfKids1UIView: UIView!
-    @IBOutlet weak var numOfKids2UIView: UIView!
-    @IBOutlet weak var numOfKidsUIView: UIView!
-    @IBOutlet weak var numOfKids4UIView: UIView!
-    @IBOutlet weak var petsUnderlineLabel: UILabel!
-    @IBOutlet weak var petsTitleLabel: UILabel!
-    @IBOutlet weak var pet1UIView: UIView!
-    @IBOutlet weak var pet2UIView: UIView!
-    @IBOutlet weak var pet3UIView: UIView!
-    @IBOutlet weak var pet4UIView: UIView!
-    
+    @IBOutlet var mashLabels: [UILabel]!
+    @IBOutlet var mashUIViews: [UIView]!
+    @IBOutlet var titleAndUnderlineLabels: [UILabel]!
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var tapWhenReadyButton: UIButton!
     @IBOutlet weak var spiralImageView: UIImageView!
@@ -99,18 +32,18 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        peopleTitleLabel.adjustsFontSizeToFitWidth = true
-        peopleTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
-        placesTitleLabel.adjustsFontSizeToFitWidth = true
-        placesTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
-        vehicleTitleLabel.adjustsFontSizeToFitWidth = true
-        vehicleTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
-        careerTitleLabel.adjustsFontSizeToFitWidth = true
-        careerTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
-        numOfKidsTitleLabel.adjustsFontSizeToFitWidth = true
-        numOfKidsTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
-        petsTitleLabel.adjustsFontSizeToFitWidth = true
-        petsTitleLabel.lineBreakMode = NSLineBreakMode.ByClipping
+        titleAndUnderlineLabels[0].adjustsFontSizeToFitWidth = true
+        titleAndUnderlineLabels[0].lineBreakMode = NSLineBreakMode.ByClipping
+        titleAndUnderlineLabels[2].adjustsFontSizeToFitWidth = true
+        titleAndUnderlineLabels[2].lineBreakMode = NSLineBreakMode.ByClipping
+        titleAndUnderlineLabels[4].adjustsFontSizeToFitWidth = true
+        titleAndUnderlineLabels[4].lineBreakMode = NSLineBreakMode.ByClipping
+        titleAndUnderlineLabels[6].adjustsFontSizeToFitWidth = true
+        titleAndUnderlineLabels[6].lineBreakMode = NSLineBreakMode.ByClipping
+        titleAndUnderlineLabels[8].adjustsFontSizeToFitWidth = true
+        titleAndUnderlineLabels[8].lineBreakMode = NSLineBreakMode.ByClipping
+        titleAndUnderlineLabels[10].adjustsFontSizeToFitWidth = true
+        titleAndUnderlineLabels[10].lineBreakMode = NSLineBreakMode.ByClipping
         
         let story = StoryController.sharedController.getStory(randomNum)
         
@@ -128,30 +61,30 @@ class ResultsViewController: UIViewController {
         mash?.theNumber = randomNum
         MashController.sharedController.saveToPersistence()
         
-        person1Label.text = mash?.person1
-        person2Label.text = mash?.person2
-        person3Label.text = mash?.person3
-        person4Label.text = mash?.person4
-        place1Label.text = mash?.place1
-        place2Label.text = mash?.place2
-        place3Label.text = mash?.place3
-        place4Label.text = mash?.place4
-        vehicle1Label.text = mash?.vehicle1
-        vehicle2Label.text = mash?.vehicle2
-        vehicle3Label.text = mash?.vehicle3
-        vehicle4Label.text = mash?.vehicle4
-        career1Label.text = mash?.career1
-        career2Label.text = mash?.career2
-        career3Label.text = mash?.career3
-        career4Label.text = mash?.career4
-        numOfKids1Label.text = mash?.numOfKids1
-        numOfKids2Label.text = mash?.numOfKids2
-        numOfKids3Label.text = mash?.numOfKids3
-        numOfKids4Label.text = mash?.numOfKids4
-        pet1Label.text = mash?.pet1
-        pet2Label.text = mash?.pet2
-        pet3Label.text = mash?.pet3
-        pet4Label.text = mash?.pet4
+        mashLabels[4].text = mash?.person1
+        mashLabels[5].text = mash?.person2
+        mashLabels[6].text = mash?.person3
+        mashLabels[7].text = mash?.person4
+        mashLabels[8].text = mash?.place1
+        mashLabels[9].text = mash?.place2
+        mashLabels[10].text = mash?.place3
+        mashLabels[11].text = mash?.place4
+        mashLabels[12].text = mash?.vehicle1
+        mashLabels[13].text = mash?.vehicle2
+        mashLabels[14].text = mash?.vehicle3
+        mashLabels[15].text = mash?.vehicle4
+        mashLabels[16].text = mash?.career1
+        mashLabels[17].text = mash?.career2
+        mashLabels[18].text = mash?.career3
+        mashLabels[19].text = mash?.career4
+        mashLabels[20].text = mash?.numOfKids1
+        mashLabels[21].text = mash?.numOfKids2
+        mashLabels[22].text = mash?.numOfKids3
+        mashLabels[23].text = mash?.numOfKids4
+        mashLabels[24].text = mash?.pet1
+        mashLabels[25].text = mash?.pet2
+        mashLabels[26].text = mash?.pet3
+        mashLabels[27].text = mash?.pet4
         
         storyLabel.hidden = true
         doneButton.hidden = true
@@ -180,13 +113,13 @@ class ResultsViewController: UIViewController {
     
     @IBAction func tapWhenReadyButtonTapped(sender: AnyObject) {
         let story = StoryController.sharedController.getStory(randomNum)
-        let homeUIViews = [mUIView, aUIView, sUIView, hUIView]
-        let peopleUIViews = [person1UIView, person2UIView, person3UIView, person4UIView]
-        let placeUIViews = [place1UIView, place2UIView, place3UIView, place4UIView]
-        let vehicleUIViews = [vehicle1UIView, vehicle2UIView, vehicle3UIView, vehicle4UIView]
-        let careerUIViews = [career1UIView, career2UIView, career3UIView, career4UIView]
-        let numOfKidsUIViews = [numOfKids1UIView, numOfKids2UIView, numOfKidsUIView, numOfKids4UIView]
-        let petUIViews = [pet1UIView, pet2UIView, pet3UIView, pet4UIView]
+        let homeUIViews = [mashUIViews[0], mashUIViews[1], mashUIViews[2], mashUIViews[3]]
+        let peopleUIViews = [mashUIViews[4], mashUIViews[5], mashUIViews[6], mashUIViews[7]]
+        let placeUIViews = [mashUIViews[8], mashUIViews[9], mashUIViews[10], mashUIViews[11]]
+        let vehicleUIViews = [mashUIViews[12], mashUIViews[13], mashUIViews[14], mashUIViews[15]]
+        let careerUIViews = [mashUIViews[16], mashUIViews[17], mashUIViews[18], mashUIViews[19]]
+        let numOfKidsUIViews = [mashUIViews[20], mashUIViews[21], mashUIViews[22], mashUIViews[23]]
+        let petUIViews = [mashUIViews[24], mashUIViews[25], mashUIViews[26], mashUIViews[27]]
         let allUIViews = [homeUIViews, peopleUIViews, placeUIViews, vehicleUIViews, careerUIViews, numOfKidsUIViews, petUIViews]
         if !resultsShown {
             tapWhenReadyButton.setTitle("", forState: .Normal)
@@ -210,7 +143,7 @@ extension ResultsViewController {
         var thePointMake = CGPointMake(10.0, 16.0)
         var secondPointMake = CGPointMake(100.0, 16.0)
         switch uiview {
-        case self.mUIView, self.aUIView, self.sUIView, self.hUIView:
+        case mashUIViews[0], mashUIViews[1], mashUIViews[2], mashUIViews[3]:
             thePointMake = CGPointMake(20.0, 30.0)
             secondPointMake = CGPointMake(65.0, 0.0)
             break
@@ -245,13 +178,13 @@ extension ResultsViewController {
     
     override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
         let story = StoryController.sharedController.getStory(randomNum)
-        let homeUIViews = [mUIView, aUIView, sUIView, hUIView]
-        let peopleUIViews = [person1UIView, person2UIView, person3UIView, person4UIView]
-        let placeUIViews = [place1UIView, place2UIView, place3UIView, place4UIView]
-        let vehicleUIViews = [vehicle1UIView, vehicle2UIView, vehicle3UIView, vehicle4UIView]
-        let careerUIViews = [career1UIView, career2UIView, career3UIView, career4UIView]
-        let numOfKidsUIViews = [numOfKids1UIView, numOfKids2UIView, numOfKidsUIView, numOfKids4UIView]
-        let petUIViews = [pet1UIView, pet2UIView, pet3UIView, pet4UIView]
+        let homeUIViews = [mashUIViews[0], mashUIViews[1], mashUIViews[2], mashUIViews[3]]
+        let peopleUIViews = [mashUIViews[4], mashUIViews[5], mashUIViews[6], mashUIViews[7]]
+        let placeUIViews = [mashUIViews[8], mashUIViews[9], mashUIViews[10], mashUIViews[11]]
+        let vehicleUIViews = [mashUIViews[12], mashUIViews[13], mashUIViews[14], mashUIViews[15]]
+        let careerUIViews = [mashUIViews[16], mashUIViews[17], mashUIViews[18], mashUIViews[19]]
+        let numOfKidsUIViews = [mashUIViews[20], mashUIViews[21], mashUIViews[22], mashUIViews[23]]
+        let petUIViews = [mashUIViews[24], mashUIViews[25], mashUIViews[26], mashUIViews[27]]
         let allUIViews = [homeUIViews, peopleUIViews, placeUIViews, vehicleUIViews, careerUIViews, numOfKidsUIViews, petUIViews]
         
         if anim.valueForKey("id")!.isEqual("anim1") {
