@@ -385,57 +385,36 @@ extension QuestionsViewController {
     
     // Take care of all the inputAccessoryView arrow actions
     
-    @IBAction func fourthTextLeftArrowTapped(sender: AnyObject) {
+    func animateArrow(uiView: UIView, textField: UITextField) {
         setupInputAccessoryViews()
-        thirdLeftAnimatedUIView.alpha = 1
+        uiView.alpha = 1
         UIView.animateWithDuration(1) { () -> Void in
-            self.thirdLeftAnimatedUIView.alpha = 0
+            uiView.alpha = 0
         }
-        thirdAnswerTextField.becomeFirstResponder()
+        textField.becomeFirstResponder()
+    }
+    
+    @IBAction func fourthTextLeftArrowTapped(sender: AnyObject) {
+        animateArrow(thirdLeftAnimatedUIView, textField: thirdAnswerTextField)
     }
     
     @IBAction func firstTextRightArrowTapped(sender: AnyObject) {
-        setupInputAccessoryViews()
-        secondRightAnimatedUIView.alpha = 1
-        UIView.animateWithDuration(1) { () -> Void in
-            self.secondRightAnimatedUIView.alpha = 0
-        }
-        secondAnswerTextField.becomeFirstResponder()
+        animateArrow(secondRightAnimatedUIView, textField: secondAnswerTextField)
     }
     
     @IBAction func secondTextLeftArrowTapped(sender: AnyObject) {
-        setupInputAccessoryViews()
-        firstLeftAnimatedUIView.alpha = 1
-        UIView.animateWithDuration(1) { () -> Void in
-            self.firstLeftAnimatedUIView.alpha = 0
-        }
-        firstAnswerTextField.becomeFirstResponder()
+        animateArrow(firstLeftAnimatedUIView, textField: firstAnswerTextField)
     }
     
     @IBAction func secondTextRightArrowTapped(sender: AnyObject) {
-        setupInputAccessoryViews()
-        thirdRightAnimatedUIView.alpha = 1
-        UIView.animateWithDuration(1) { () -> Void in
-            self.thirdRightAnimatedUIView.alpha = 0
-        }
-        thirdAnswerTextField.becomeFirstResponder()
+        animateArrow(thirdRightAnimatedUIView, textField: thirdAnswerTextField)
     }
     
     @IBAction func thirdTextLeftArrowTapped(sender: AnyObject) {
-        setupInputAccessoryViews()
-        secondLeftAnimatedUIView.alpha = 1
-        UIView.animateWithDuration(1) { () -> Void in
-            self.secondLeftAnimatedUIView.alpha = 0
-        }
-        secondAnswerTextField.becomeFirstResponder()
+        animateArrow(secondLeftAnimatedUIView, textField: secondAnswerTextField)
     }
     
     @IBAction func thirdTextRightArrowTapped(sender: AnyObject) {
-        setupInputAccessoryViews()
-        fourthRightAnimatedUIView.alpha = 1
-        UIView.animateWithDuration(1) { () -> Void in
-            self.fourthRightAnimatedUIView.alpha = 0
-        }
-        fourthAnswerTextField.becomeFirstResponder()
+        animateArrow(fourthRightAnimatedUIView, textField: fourthAnswerTextField)
     }
 }
